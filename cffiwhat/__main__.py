@@ -1,6 +1,8 @@
 
 def cffi():
     from cffi import FFI
+    #from cffi._shimmed_dist_utils import Distribution
+    #Distribution.parse_config_files = lambda self: None
 
     ffi = FFI()
     ffi.set_source("_test", """
@@ -22,7 +24,7 @@ def cffi():
 
 def main():
     print("hello")
-    #cffi()
+    cffi()
 
 
 if __name__ == '__main__':
