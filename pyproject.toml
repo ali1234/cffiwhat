@@ -10,6 +10,7 @@ classifiers = ["License :: OSI Approved :: MIT License"]
 dynamic = ["version", "description"]
 dependencies = [
     "cffi",
+    "setuptools; python_version >= '3.12'",
 ]
 
 [project.scripts]
